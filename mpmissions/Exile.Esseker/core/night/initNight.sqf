@@ -17,7 +17,7 @@
 		[] execVM core\night\initNight.sqf
 */
 
-waitUntil { uiSleep 0.5; !isNil"EPOCH_loadingScreenDone" };
+waitUntil { uiSleep 0.5;ExileClientPlayerIsSpawned;};
 
 _firstWarning = 140;
 _secondWarning = 120;
