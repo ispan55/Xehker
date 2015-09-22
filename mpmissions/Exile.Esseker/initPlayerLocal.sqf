@@ -12,13 +12,60 @@
 
 */
 
+//_________Nightime by WolfkillArcadia_________//
+if (hasInterface) then {
+    [] execVM "core\night\initNight.sqf";
+};
 
+//__________Dyanmic Weather by tortuosit___________//
+if (isServer) then {
+    /*
+    RANGES:
+    - weighting [-1..1]
+    - turbulence [0..1]
+    - wind speed in m/s
+    - wind dir [0..360]
+    - everything else [0..1]
+    */
 
+    tort_island_overcast = [(0.5+(random(0.5))), 0.6, 1, 0.5, 0];          //init, min, max, weight, turbulence
+    tort_island_fog =   [random 0.5, 0.02, 0.5, 0.5, 0];             //init, min, max, weight, turbulence
+    tort_island_wind =  [random 6, floor(random 360), 0, 6, 0, 360, 0, 0]; //initS, initD, minS, maxS, minD, maxD, weight, turbulence
+    tort_island_rain =  [random 0.3, 0, 1, 0, 0, 0.85];          //init, min, max, weight, turbulence, overcastthreshold
+    tort_island_breakout = [0.2, 0.2, 600, 1800];
 
+    //tort_overcast_now = 0.6;
+    tort_overcast_min = 0.6;
+    tort_overcast_max = 1;
+    tort_overcast_weighting = 0;
+    tort_overcast_turbulence = 0;
 
+    //tort_fog_now = random 1;
+    tort_fog_min = 0.02;
+    tort_fog_max = 1;
+    tort_fog_weighting = 0.2;
+    tort_fog_turbulence = 0;
 
+    //tort_wind_speed_now = random 6;
+    tort_wind_speed_min = 0;
+    tort_wind_speed_max = 6;
+    tort_wind_dir_min = 0;
+    tort_wind_dir_max = 360;
+    tort_wind_weighting = 0;
+    tort_wind_turbulence = 0;
 
+    //tort_rain_now = random 1;
+    tort_rain_min = 0;
+    tort_rain_max = 1;
+    tort_rain_threshold = 0.85;
 
+    tort_breakout_p1 = 0.2;
+    tort_breakout_p2 = 0.2;
+    tort_breakout_s1 = 600;
+    tort_breakout_s2 = 1800;
+    //tort_breakout_changenow = true;
+    [] execVM "core\dynamicweather\init.sqf";
+};
 
 //______Little immersion Tweaks [lit]___//
 /*
