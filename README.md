@@ -7,7 +7,7 @@ This map is on Esseker, using my own mod pack. Feel free to submit pull requests
 ---
 
 The below lists will change when I come up with more ideas or implement more things.
-
+<br><br>
 
 **CURRENT FEATURES:**
 
@@ -15,7 +15,7 @@ The below lists will change when I come up with more ideas or implement more thi
 * Vampires Mission System
 
 **PROPOSED FEATURES:**
-*(includes everything above)*
+<br>*(includes everything above)*
 
 * Custom Dynamic Weather
 * Day - Night cycle
@@ -24,13 +24,14 @@ The below lists will change when I come up with more ideas or implement more thi
 * Roaming Demons (dusk/night)
 
 
+<br><br>
 **CURRENT MOD PACK:**
 
-* HLC
+* HLC Weapon Pack
 
-apocalyptic
+
 **PROPOSED MOD PACK:**
-*(includes everything above)*
+<br>*(includes everything above)*
 
 * CBA
 * ACE3
