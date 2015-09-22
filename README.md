@@ -13,11 +13,11 @@ The below lists will change when I come up with more ideas or implement more thi
 
 * A3XAI - Roaming Dynamic AI
 * Vampires Mission System
+* Custom Dynamic Weather
 
 **PROPOSED FEATURES:**
 <br>*(includes everything above)*
 
-* Custom Dynamic Weather
 * Day - Night cycle
 * Headless Client Controlled AI
 * Roaming Zombies (day)
