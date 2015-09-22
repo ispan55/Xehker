@@ -36,3 +36,4 @@ The below lists will change when I come up with more ideas or implement more thi
 * CBA
 * ACE3
 * TFAR *(possibly)*
+* MAS Vehicles
