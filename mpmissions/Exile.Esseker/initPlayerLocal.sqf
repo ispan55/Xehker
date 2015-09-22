@@ -1,3 +1,54 @@
+/*
+
+ 	Name: initPlayerLocal.sqf
+
+
+ 	Author(s):
+    Exile Mod Team
+    WolfkillArcadia
+
+ 	Description:
+    Initializes player init
+
+*/
+
+
+
+
+
+
+
+
+
+//______Little immersion Tweaks [lit]___//
+/*
+0: Bool; whether to leave these scripts on after player dies; default false.
+    1: Map Subtractions Array (leave empty to disable):
+        0: Bool; whether to remove "Show player on map" button; default true.
+        1: Bool; whether to remove and disable map textures; default true.
+        2: Bool; whether to remove cursor grid ref; default true.
+        3: Bool; whether to use alternative cursor type; default true.
+    2: Map Additions Array (leave empty to disable):
+        0: Scalar: flashlight size to use (0 = normal, 1 = large); default 0.
+        1: Bool: whether to enable NVG on map; default true.
+        2: Bool: whether player starts with flashlight item; default true.
+    3: NVG Array (leave empty to disable):
+        0: Array (leave empty to disable):
+            0: Scalar; max viewdistance of NVG; default 1000.
+        1: Bool; whether to enable NVG grain; default true.
+        2: Bool; whether to turn off NVG when using non-collimator optics; default true.
+*/
+if (!isDedicated and hasInterface) then {
+    [true,[true,true,true,true],[0,true,false],[[1000],true,false]] execVM "core\vip_lit\vip_lit_init.sqf";
+};
+
+/*
+---------------------
+END SCRIPTING INIT
+BEGIN STATIC OBJECTS
+---------------------
+*/
+
 ///////////////////////////////////////////////////////////////////////////////
 // Static Objects
 ///////////////////////////////////////////////////////////////////////////////
@@ -30,18 +81,18 @@ _cashDesk setDir 131.818;
 _cashDesk setPosATL [14589.8, 16778.2, -0.0701294];
 
 _microwave = "Land_Microwave_01_F" createVehicleLocal [0,0,0];
-_cashDesk disableCollisionWith _microwave;         
-_microwave disableCollisionWith _cashDesk; 
+_cashDesk disableCollisionWith _microwave;
+_microwave disableCollisionWith _cashDesk;
 _microwave attachTo [_cashDesk, [-0.6, 0.2, 1.1]];
 
 _ketchup = "Land_Ketchup_01_F" createVehicleLocal [0,0,0];
-_cashDesk disableCollisionWith _ketchup;         
-_ketchup disableCollisionWith _cashDesk; 
+_cashDesk disableCollisionWith _ketchup;
+_ketchup disableCollisionWith _cashDesk;
 _ketchup attachTo [_cashDesk, [-0.6, 0, 1.1]];
 
 _mustard = "Land_Mustard_01_F" createVehicleLocal [0,0,0];
-_cashDesk disableCollisionWith _mustard;         
-_mustard disableCollisionWith _cashDesk; 
+_cashDesk disableCollisionWith _mustard;
+_mustard disableCollisionWith _cashDesk;
 _mustard attachTo [_cashDesk, [-0.5, -0.05, 1.1]];
 
 [
@@ -58,7 +109,7 @@ call ExileClient_object_trader_create;
 // Armory Trader
 ///////////////////////////////////////////////////////////////////////////
 _chair = "Land_CampingChair_V2_F" createVehicleLocal [0,0,0];
-_chair setDir 208.182;    
+_chair setDir 208.182;
 _chair setPosATL [14568.1, 16764.3, 0.084837];
 
 [
@@ -147,7 +198,7 @@ call ExileClient_object_trader_create;
 // Vehicle Trader
 ///////////////////////////////////////////////////////////////////////////
 
-_trader = 
+_trader =
 [
     "Exile_Trader_Vehicle",
     "WhiteHead_11",
@@ -158,7 +209,7 @@ _trader =
 call ExileClient_object_trader_create;
 
 _carWreck = "Land_Wreck_CarDismantled_F" createVehicleLocal [0,0,0];
-_carWreck setDir 355.455;    
+_carWreck setDir 355.455;
 _carWreck setPosATL [14605.6, 16877.3, 0.0208359];
 
 ///////////////////////////////////////////////////////////////////////////
@@ -210,16 +261,6 @@ call ExileClient_object_trader_create;
 call ExileClient_object_trader_create;
 
 
-
-
-
-
-
-
-
-
-
-
 ///////////////////////////////////////////////////////////////////////////
 // Western Guard 01
 ///////////////////////////////////////////////////////////////////////////
@@ -248,29 +289,11 @@ call ExileClient_object_trader_create;
 call ExileClient_object_trader_create;
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ///////////////////////////////////////////////////////////////////////////
 // Western Vehicle Trader
 ///////////////////////////////////////////////////////////////////////////
 
-_trader = 
+_trader =
 [
     "Exile_Trader_Vehicle",
     "WhiteHead_11",
@@ -281,7 +304,7 @@ _trader =
 call ExileClient_object_trader_create;
 
 _carWreck = "Land_Wreck_CarDismantled_F" createVehicleLocal [0,0,0];
-_carWreck setDir 130.966;    
+_carWreck setDir 130.966;
 _carWreck setPosATL [2978.76,18144.5,1.13293];
 
 ///////////////////////////////////////////////////////////////////////////
@@ -349,11 +372,6 @@ call ExileClient_object_trader_create;
 ]
 call ExileClient_object_trader_create;
 
-
-
-
-
-
 ///////////////////////////////////////////////////////////////////////////
 // Eastern Fast Food Trader
 ///////////////////////////////////////////////////////////////////////////
@@ -362,18 +380,18 @@ _cashDesk setDir 222.727;
 _cashDesk setPosATL [23353.1, 24168, 0.16585];
 
 _microwave = "Land_Microwave_01_F" createVehicleLocal [0,0,0];
-_cashDesk disableCollisionWith _microwave;         
-_microwave disableCollisionWith _cashDesk; 
+_cashDesk disableCollisionWith _microwave;
+_microwave disableCollisionWith _cashDesk;
 _microwave attachTo [_cashDesk, [-0.6, 0.2, 1.1]];
 
 _ketchup = "Land_Ketchup_01_F" createVehicleLocal [0,0,0];
-_cashDesk disableCollisionWith _ketchup;         
-_ketchup disableCollisionWith _cashDesk; 
+_cashDesk disableCollisionWith _ketchup;
+_ketchup disableCollisionWith _cashDesk;
 _ketchup attachTo [_cashDesk, [-0.6, 0, 1.1]];
 
 _mustard = "Land_Mustard_01_F" createVehicleLocal [0,0,0];
-_cashDesk disableCollisionWith _mustard;         
-_mustard disableCollisionWith _cashDesk; 
+_cashDesk disableCollisionWith _mustard;
+_mustard disableCollisionWith _cashDesk;
 _mustard attachTo [_cashDesk, [-0.5, -0.05, 1.1]];
 
 [
@@ -403,7 +421,7 @@ call ExileClient_object_trader_create;
 // Eastern Vehicle Trader
 ///////////////////////////////////////////////////////////////////////////
 
-_trader = 
+_trader =
 [
     "Exile_Trader_Vehicle",
     "WhiteHead_11",
@@ -414,7 +432,7 @@ _trader =
 call ExileClient_object_trader_create;
 
 _carWreck = "Land_Wreck_CarDismantled_F" createVehicleLocal [0,0,0];
-_carWreck setDir 47.2728;    
+_carWreck setDir 47.2728;
 _carWreck setPosATL [23387.3, 24190.3, 0.05];
 
 ///////////////////////////////////////////////////////////////////////////
