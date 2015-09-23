@@ -1062,7 +1062,7 @@ class Mission
 		};
 		class Item2
 		{
-			position[]={8478.6953,17.301184,5647.4932};
+			position[]={8496.0459,16.470913,5650.3848};
 			name="SpawnEsseker";
 			text="Esseker";
 			type="ExileSpawnZone";
@@ -1076,7 +1076,7 @@ class Mission
 		};
 		class Item4
 		{
-			position[]={11851.811,15.108938,7975.563};
+			position[]={11896.542,14.174987,7970.1958};
 			name="SpawnNoviGrad";
 			text="Novi Grad";
 			type="ExileSpawnZone";
@@ -1096,15 +1096,15 @@ class Mission
 		};
 		class Item6
 		{
-			position[]={11851.811,15.108938,7975.563};
+			position[]={3268.8718,232.84123,3394.4446};
 			name="TraderZoneSilderas";
 			text="Silderas Trader City";
 			markerType="ELLIPSE";
-			type="ExileTraderZone";
+			type="Empty";
 			colorName="ColorBlue";
 			fillName="SolidBorder";
-			a=175;
-			b=175;
+			a=100;
+			b=100;
 			drawBorder=1;
 		};
 		class Item7
@@ -1134,7 +1134,7 @@ class Mission
 			repeating=1;
 			interruptable=1;
 			age="UNKNOWN";
-			name="ExileTrader";
+			name="AirportExileTrader";
 			expCond="(vehicle player) in thisList";
 			expActiv="call ExileClient_object_player_event_onEnterSafezone";
 			expDesactiv="call ExileClient_object_player_event_onLeaveSafezone";
@@ -1152,7 +1152,7 @@ class Mission
 			repeating=1;
 			interruptable=1;
 			age="UNKNOWN";
-			name="ExileTrader";
+			name="ESPetrolExileTrader";
 			expCond="(vehicle player) in thisList";
 			expActiv="call ExileClient_object_player_event_onEnterSafezone";
 			expDesactiv="call ExileClient_object_player_event_onLeaveSafezone";
@@ -1162,9 +1162,9 @@ class Mission
 		};
 		class Item2
 		{
-			position[]={23334.605,4.0095582,24188.938};
-			a=175;
-			b=175;
+			position[]={3268.813,232.81172,3395.1558};
+			a=100;
+			b=100;
 			rectangular=1;
 			activationBy="ANY";
 			repeating=1;
