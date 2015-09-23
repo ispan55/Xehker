@@ -3,10 +3,10 @@
  * www.exilemod.com
  * © 2015 Exile Mod Team
  *
- * This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. 
+ * This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
  * To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/4.0/.
  */
- 
+
 private["_sessionID","_parameters","_itemClassName","_quantity","_containerType","_containerNetID","_playerObject","_vehicleObject","_salesPrice","_sellPrice","_playerMoney","_respectGain","_playerRespect","_responseCode"];
 _sessionID = _this select 0;
 _parameters = _this select 1;
@@ -14,7 +14,7 @@ _itemClassName = _parameters select 0;
 _quantity = _parameters select 1;
 _containerType = _parameters select 2;
 _containerNetID = _parameters select 3;
-try 
+try
 {
 	_playerObject = _sessionID call ExileServer_system_session_getPlayerObject;
 	if(_playerObject getVariable ["ExileMutex",false])then
@@ -36,7 +36,11 @@ try
 		throw 3;
 	};
 	_salesPrice = getNumber (missionConfigFile >> "CfgExileArsenal" >> _itemClassName >> "price");
-	_sellPrice = floor (_salesPrice * 0.5);
+    _spm = getNumber (missionConfigFile >> "CfgExileArsenal" >> _itemClassName >> "spm");
+	if (isNull _spm) then {
+		_spm = 0.5;
+	};
+	_sellPrice = floor (_salesPrice * _spm);
 	if (_sellPrice <= 0) then
 	{
 		throw 4;
@@ -54,12 +58,12 @@ try
 	{
 		_vehicleObject call ExileServer_object_vehicle_database_update;
 	}
-	else 
+	else
 	{
 		_playerObject call ExileServer_object_player_database_update;
 	};
 }
-catch 
+catch
 {
 	_responseCode = _exception;
 	diag_log format ["NOPE: %1", _responseCode];
