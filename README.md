@@ -14,6 +14,7 @@ The below lists will change when I come up with more ideas or implement more thi
 * A3XAI - Roaming Dynamic AI
 * Vampires Mission System
 * Custom Dynamic Weather
+* Little Immersion Tweaks
 
 **PROPOSED FEATURES:**
 <br>*(includes everything above)*
@@ -27,13 +28,21 @@ The below lists will change when I come up with more ideas or implement more thi
 <br><br>
 **CURRENT MOD PACK:**
 
+* CBA
 * HLC Weapon Pack
+* Dynamic Soundscapes
+* L_Axemann Align, Immerse, Suppress, Mount
+* PG Services
+* Proman Vehicle View
+* Robert Hammer Accessories
+* Robert Hammer Pistols
+* Robert Hammer M4/M16
 
 
 **PROPOSED MOD PACK:**
 <br>*(includes everything above)*
 
-* CBA
 * ACE3
+* Enhanced Movement
 * TFAR *(possibly)*
 * MAS Vehicles
