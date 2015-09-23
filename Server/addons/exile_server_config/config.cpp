@@ -945,10 +945,7 @@ class CfgLootTables
 			{78.05, "H_Shemag_khk"},
 			{78.15, "V_Chestrig_oli"},
 			{78.2, "U_I_G_resistanceLeader_F"},
-			{78.25, "optic_NVS"},
-			{78.3, "V_I_G_resistanceLeader_F"},
-			{78.31, "optic_Nightstalker"},
-			{78.32, "optic_tws"}
+			{78.3, "V_I_G_resistanceLeader_F"}
 		};
 	};
 
@@ -1160,10 +1157,7 @@ class CfgLootTables
 			{62.0000000000001, "optic_Yorris"},
 			{62.0500000000001, "U_NikosBody"},
 			{62.1000000000001, "U_NikosAgedBody"},
-			{62.15, "U_OrestesBody"},
-			{62.2, "optic_NVS"},
-			{62.21, "optic_tws"},
-			{62.22, "optic_Nightstalker"}
+			{62.15, "U_OrestesBody"}
 		};
 	};
 
@@ -1905,11 +1899,7 @@ class CfgLootTables
 			{93.75, "H_HelmetLeaderO_oucamo"},
 			{93.85, "H_HelmetO_oucamo"},
 			{93.95, "V_PlateCarrierL_CTRG"},
-			{94.05, "V_PlateCarrierH_CTRG"},
-			{94.1, "optic_NVS"},
-			{94.11, "optic_tws_mg"},
-			{94.12, "optic_Nightstalker"},
-			{94.13, "optic_tws"}
+			{94.05, "V_PlateCarrierH_CTRG"}
 		};
 	};
 
