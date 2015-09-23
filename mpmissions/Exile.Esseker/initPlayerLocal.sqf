@@ -14,7 +14,7 @@
 
 //_________Nightime by WolfkillArcadia_________//
 if (hasInterface) then {
-    [] execVM "core\night\initNight.sqf";
+//    [] execVM "core\night\initNight.sqf";
 };
 
 //__________Dyanmic Weather by tortuosit___________//
