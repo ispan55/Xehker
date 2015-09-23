@@ -7,7 +7,7 @@ class CfgPatches {
 	};
 };
 class CfgFunctions {
-	class TGC {
+	class server {
 		class main {
 			file = "x\addons\custom_server\functions";
 			class init {
