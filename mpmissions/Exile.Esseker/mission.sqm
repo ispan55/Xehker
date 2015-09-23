@@ -1097,8 +1097,8 @@ class Mission
 		class Item6
 		{
 			position[]={3268.8718,232.84123,3394.4446};
-			name="TraderZoneSilderas";
-			text="Silderas Trader City";
+			name="TraderZoneForest";
+			text="Forest Trader City";
 			markerType="ELLIPSE";
 			type="Empty";
 			colorName="ColorBlue";
@@ -1170,7 +1170,7 @@ class Mission
 			repeating=1;
 			interruptable=1;
 			age="UNKNOWN";
-			name="ExileTrader";
+			name="ForestExileTrader";
 			expCond="(vehicle player) in thisList";
 			expActiv="call ExileClient_object_player_event_onEnterSafezone";
 			expDesactiv="call ExileClient_object_player_event_onLeaveSafezone";
@@ -1184,7 +1184,6 @@ class Intro
 {
 	addOns[]=
 	{
-		"a3_map_altis",
 		"esseker"
 	};
 	addOnsAuto[]=
@@ -1215,7 +1214,6 @@ class OutroWin
 {
 	addOns[]=
 	{
-		"a3_map_altis",
 		"esseker"
 	};
 	addOnsAuto[]=
@@ -1246,7 +1244,6 @@ class OutroLoose
 {
 	addOns[]=
 	{
-		"a3_map_altis",
 		"esseker"
 	};
 	addOnsAuto[]=
