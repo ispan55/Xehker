@@ -65,7 +65,7 @@ while {tort_process_overcast} do
          0 setovercast tort_overcast_amount;
          sleep 0.5; forceweatherchange; sleep 0.5; 0 setrain tort_rain_amount;
          //re-init of rain module necessary, as otherwise ArmA may control rain temporarily
-         if (tort_process_fog) then {tort_rain = [tort_rain_amount, tort_rain_min, tort_rain_max, tort_rain_weighting, tort_rain_turbulence, tort_rain_threshold] execVM "\@tort_DynamicWeather2\script\modules\tort_rain.sqf"};
+         if (tort_process_fog) then {tort_rain = [tort_rain_amount, tort_rain_min, tort_rain_max, tort_rain_weighting, tort_rain_turbulence, tort_rain_threshold] execVM "core\dynamicweather\tort_rain.sqf"};
       };
       if (!tort_process_overcast || !tort_dynamicweather2_watch) exitWith {};
       if ((_max != tort_overcast_max) || (_min != tort_overcast_min)) exitWith {_min = tort_overcast_min;_max = tort_overcast_max};
