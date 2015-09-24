@@ -3,10 +3,10 @@
  * www.exilemod.com
  * © 2015 Exile Mod Team
  *
- * This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. 
+ * This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
  * To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/4.0/.
  */
- 
+
 
 class CfgClans
 {
@@ -25,7 +25,7 @@ class CfgClans
 class Exile_AbstractCraftingRecipe
 {
 	name = "";
-	pictureItem = ""; 
+	pictureItem = "";
 	returnedItems[] = {};
 	components[] = {}; // Required components
 	tools[] = {}; // Required tools (matches, gas cooker etc.)
@@ -36,7 +36,7 @@ class Exile_AbstractCraftingRecipe
 
 class CfgCraftingRecipes
 {
-	
+
 class CookBBQSandwich: Exile_AbstractCraftingRecipe
 {
 	name = "Cook BBQ Sandwich";
@@ -50,7 +50,7 @@ class CookBBQSandwich: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_BBQSandwich"}
 	};
@@ -69,7 +69,7 @@ class CookCatfood: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_Catfood"}
 	};
@@ -88,7 +88,7 @@ class CookChristmasTinner: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_ChristmasTinner"}
 	};
@@ -106,7 +106,7 @@ class CookGloriousKnakworst: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_GloriousKnakworst"}
 	};
@@ -125,7 +125,7 @@ class CookPlasticBottleDirtyWater: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_PlasticBottleDirtyWater"}
 	};
@@ -143,7 +143,7 @@ class CookPlasticBottleSaltWater: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_PlasticBottleSaltWater"}
 	};
@@ -162,7 +162,7 @@ class CookSausageGravy: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_SausageGravy"}
 	};
@@ -181,7 +181,7 @@ class CookSurstromming: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_Surstromming"}
 	};
@@ -191,11 +191,11 @@ class CraftFirePlace: Exile_AbstractCraftingRecipe
 {
 	name = "Craft Fire Place";
 	pictureItem = "Exile_Item_CampFireKit";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_CampFireKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{2, "Exile_Item_WoodLog"}
 	};
@@ -205,11 +205,11 @@ class CraftFloodLight: Exile_AbstractCraftingRecipe
 	name = "Craft Flood Light";
 	pictureItem = "Exile_Item_FloodLightKit";
 	requiresFire = 1;
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_FloodLightKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_MetalPole"},
 		{1, "Exile_Item_LightBulb"},
@@ -222,11 +222,11 @@ class CraftFortificationUpgrade: Exile_AbstractCraftingRecipe
 	pictureItem = "Exile_Item_MetalBoard"; //<< CHANGE IT
 	requiresFire = 1;
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_FortificationUpgrade"}
 	};
-	components[] = 
+	components[] =
 	{
 		{2, "Exile_Item_MetalPole"},
 		{4, "Exile_Item_MetalBoard"}
@@ -237,11 +237,11 @@ class CraftMetalBoard: Exile_AbstractCraftingRecipe
 	name = "Craft Metal Board";
 	pictureItem = "Exile_Item_MetalBoard";
 	requiresFire = 1;
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_MetalBoard"}
 	};
-	components[] = 
+	components[] =
 	{
 		{2, "Exile_Item_JunkMetal"}
 	};
@@ -251,11 +251,11 @@ class CraftMetalPole: Exile_AbstractCraftingRecipe
 	name = "Craft Metal Pole";
 	pictureItem = "Exile_Item_MetalPole";
 	requiresFire = 1;
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_MetalPole"}
 	};
-	components[] = 
+	components[] =
 	{
 		{4, "Exile_Item_JunkMetal"}
 	};
@@ -265,11 +265,11 @@ class CraftPortableGenerator: Exile_AbstractCraftingRecipe
 	name = "Craft Portable Generator";
 	pictureItem = "Exile_Item_PortableGeneratorKit";
 	requiresFire = 1;
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_PortableGeneratorKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{4, "Exile_Item_MetalBoard"},
 		{1, "Exile_Item_FuelCanisterFull"},
@@ -281,11 +281,11 @@ class CraftStorageCrate: Exile_AbstractCraftingRecipe
 	name = "Craft Storage Crate";
 	pictureItem = "Exile_Item_StorageCrateKit";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_StorageCrateKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{5, "Exile_Item_WoodPlank"}
 	};
@@ -295,11 +295,11 @@ class CraftWoodDoorWay: Exile_AbstractCraftingRecipe
 	name = "Craft Wood Doorway";
 	pictureItem = "Exile_Item_WoodDoorwayKit";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_WoodDoorwayKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{6, "Exile_Item_WoodPlank"}
 	};
@@ -310,11 +310,11 @@ class CraftWoodDrawBridge: Exile_AbstractCraftingRecipe
 	name = "Craft Wood Draw-Bridge";
 	pictureItem = "Exile_Item_WoodDrawBridgeKit";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_WoodDrawBridgeKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{4, "Exile_Item_WoodPlank"},
 		{2, "Exile_Item_Rope"}
@@ -326,11 +326,11 @@ class CraftWoodFloor: Exile_AbstractCraftingRecipe
 	name = "Craft Wood Floor";
 	pictureItem = "Exile_Item_WoodFloorKit";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_WoodFloorKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{4, "Exile_Item_WoodPlank"}
 	};
@@ -340,11 +340,11 @@ class CraftWoodFloorPort: Exile_AbstractCraftingRecipe
 	name = "Craft Wood Floor Port";
 	pictureItem = "Exile_Item_WoodFloorPortKit";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_WoodFloorPortKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{6, "Exile_Item_WoodPlank"}
 	};
@@ -354,11 +354,11 @@ class CraftWoodGate: Exile_AbstractCraftingRecipe
 	name = "Craft Wood Gate";
 	pictureItem = "Exile_Item_WoodGateKit";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_WoodGateKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{8, "Exile_Item_WoodPlank"}
 	};
@@ -368,11 +368,11 @@ class CraftWoodPlank: Exile_AbstractCraftingRecipe
 	name = "Craft Wood Plank";
 	pictureItem = "Exile_Item_WoodPlank";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_WoodPlank"}
 	};
-	components[] = 
+	components[] =
 	{
 		{2, "Exile_Item_WoodLog"}
 	};
@@ -382,11 +382,11 @@ class CraftWoodStairs: Exile_AbstractCraftingRecipe
 	name = "Craft Wood Stairs";
 	pictureItem = "Exile_Item_WoodStairsKit";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_WoodStairsKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{6, "Exile_Item_WoodPlank"}
 	};
@@ -396,11 +396,11 @@ class CraftWoodSupport: Exile_AbstractCraftingRecipe
 	name = "Craft Wood Support";
 	pictureItem = "Exile_Item_WoodSupportKit";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_WoodSupportKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{6, "Exile_Item_WoodPlank"}
 	};
@@ -410,11 +410,11 @@ class CraftWoodWall: Exile_AbstractCraftingRecipe
 	name = "Craft Wood Wall";
 	pictureItem = "Exile_Item_WoodWallKit";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_WoodWallKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{4, "Exile_Item_WoodPlank"}
 	};
@@ -424,11 +424,11 @@ class CraftWoodWallHalf: Exile_AbstractCraftingRecipe
 	name = "Craft 1/2 Wood Wall";
 	pictureItem = "Exile_Item_WoodWallHalfKit";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_WoodWallHalfKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{2, "Exile_Item_WoodPlank"}
 	};
@@ -438,11 +438,11 @@ class CraftWoodWindow: Exile_AbstractCraftingRecipe
 	name = "Craft Wood Window";
 	pictureItem = "Exile_Item_WoodWindowKit";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_WoodWindowKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{6, "Exile_Item_WoodPlank"}
 	};
@@ -451,11 +451,11 @@ class CraftWorkBench: Exile_AbstractCraftingRecipe
 {
 	name = "Craft Work Bench";
 	pictureItem = "Exile_Item_WorkBenchKit";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_WorkBenchKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{4, "Exile_Item_WoodLog"}
 	};
@@ -469,7 +469,7 @@ class FillEmptyPlasticBottleWithDirtyWater: Exile_AbstractCraftingRecipe
 	{
 		{1, "Exile_Item_PlasticBottleDirtyWater"}
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_PlasticBottleEmpty"}
 	};
@@ -483,7 +483,7 @@ class FillEmptyPlasticBottleWithFreshWater: Exile_AbstractCraftingRecipe
 	{
 		{1, "Exile_Item_PlasticBottleFreshWater"}
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_PlasticBottleEmpty"}
 	};
@@ -493,11 +493,11 @@ class FillEmptyPlasticBottleWithSaltWater: Exile_AbstractCraftingRecipe
 	name = "Fill Salt Water";
 	pictureItem = "Exile_Item_PlasticBottleSaltWater";
 	requiresOcean = 1;
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_PlasticBottleSaltWater"}
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_PlasticBottleEmpty"}
 	};
@@ -507,11 +507,11 @@ class FillFuelCanister: Exile_AbstractCraftingRecipe
 	name = "Fill Fuel Canister";
 	pictureItem = "Exile_Item_FuelCanisterFull";
 	requiredInteractionModelGroup = "FuelSource";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_FuelCanisterFull"}
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_FuelCanisterEmpty"}
 	};
@@ -521,11 +521,11 @@ class UpgradeToWoodDoor: Exile_AbstractCraftingRecipe
 	name = "Upgrade to Wood Door";
 	pictureItem = "Exile_Item_WoodDoorKit";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_WoodDoorKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_WoodDoorwayKit"},
 		{2, "Exile_Item_WoodPlank"}
@@ -536,11 +536,11 @@ class UpgradeToWoodFloorPort: Exile_AbstractCraftingRecipe
 	name = "Upgrade to Wood Floor Port";
 	pictureItem = "Exile_Item_WoodFloorPortKit";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_WoodFloorPortKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_WoodFloorKit"},
 		{2, "Exile_Item_WoodPlank"}
@@ -551,11 +551,11 @@ class UpgradeToWoodGate: Exile_AbstractCraftingRecipe
 	name = "Upgrade to Wood Gate";
 	pictureItem = "Exile_Item_WoodGateKit";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_WoodGateKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_WoodWallKit"},
 		{4, "Exile_Item_WoodPlank"}
@@ -566,11 +566,11 @@ class UpgradeToWoodWall: Exile_AbstractCraftingRecipe
 	name = "Upgrade to Wood Wall";
 	pictureItem = "Exile_Item_WoodWallHalfKit";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_WoodWallKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{2, "Exile_Item_WoodWallHalfKit"}
 	};
@@ -580,11 +580,11 @@ class UpgradeToWoodWindow: Exile_AbstractCraftingRecipe
 	name = "Upgrade to Wood Window";
 	pictureItem = "Exile_Item_WoodWindowKit";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_WoodWindowKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_WoodWallKit"},
 		{2, "Exile_Item_WoodPlank"}
@@ -950,11 +950,7 @@ class CfgExileArsenal
 	class optic_LRPS								{ quality = 2; price = 300; };
 	class optic_MRCO								{ quality = 1; price = 100; };
 	class optic_MRD									{ quality = 1; price = 10; };
-	class optic_Nightstalker						{ quality = 3; price = 1000; };
-	class optic_NVS									{ quality = 2; price = 500; };
 	class optic_SOS									{ quality = 2; price = 200; };
-	class optic_tws									{ quality = 3; price = 1500; };
-	class optic_tws_mg								{ quality = 3; price = 1500; };
 	class optic_Yorris								{ quality = 1; price = 10; };
 
 	///////////////////////////////////////////////////////////////////////////////
@@ -1001,7 +997,7 @@ class CfgExileArsenal
 	///////////////////////////////////////////////////////////////////////////////
 	// Navigation
 	///////////////////////////////////////////////////////////////////////////////
-	class ItemWatch									{ quality = 1; price = 6; };	
+	class ItemWatch									{ quality = 1; price = 6; };
 	class ItemGPS									{ quality = 1; price = 40; };
 	class ItemMap									{ quality = 1; price = 6; };
 	class ItemCompass								{ quality = 1; price = 6; };
@@ -1383,7 +1379,7 @@ class CfgExileArsenal
 	///////////////////////////////////////////////////////////////////////////////
 	class Exile_Chopper_Taru_Transport_CSAT						{ quality = 1; price = 8000; };
 	class Exile_Chopper_Taru_Transport_Black					{ quality = 1; price = 8000; };
-	
+
 	class Exile_Chopper_Taru_CSAT								{ quality = 1; price = 8200; };
 	class Exile_Chopper_Taru_Black								{ quality = 1; price = 8200; };
 
@@ -1425,16 +1421,6 @@ class CfgExileArsenal
 	// HEMMT
 	///////////////////////////////////////////////////////////////////////////////
 	class Exile_Car_HEMMT 								{ quality = 1; price = 3000; };
-
-	///////////////////////////////////////////////////////////////////////////////
-	// Hunter
-	///////////////////////////////////////////////////////////////////////////////
-	class Exile_Car_Hunter 								{ quality = 1; price = 6000; };
-
-	///////////////////////////////////////////////////////////////////////////////
-	// Ifrit
-	///////////////////////////////////////////////////////////////////////////////
-	class Exile_Car_Ifrit 								{ quality = 1; price = 5000; };
 
 	///////////////////////////////////////////////////////////////////////////////
 	// Offroad
@@ -1501,11 +1487,6 @@ class CfgExileArsenal
 	class Exile_Car_Offroad_Repair_Guerilla12 			{ quality = 1; price = 2700; };
 
 	///////////////////////////////////////////////////////////////////////////////
-	// Strider
-	///////////////////////////////////////////////////////////////////////////////
-	class Exile_Car_Strider 							{ quality = 1; price = 8000; };
-
-	///////////////////////////////////////////////////////////////////////////////
 	// SUV
 	///////////////////////////////////////////////////////////////////////////////
 	class Exile_Car_SUV_Red 							{ quality = 1; price = 1500; };
@@ -1513,13 +1494,9 @@ class CfgExileArsenal
 	class Exile_Car_SUV_Grey 							{ quality = 1; price = 1500; };
 	class Exile_Car_SUV_Orange 							{ quality = 1; price = 1500; };
 
-	///////////////////////////////////////////////////////////////////////////////
-	// Tempest
-	///////////////////////////////////////////////////////////////////////////////
-	class Exile_Car_Tempest 							{ quality = 1; price = 4000; };
 
 	///////////////////////////////////////////////////////////////////////////////
-	// Van 
+	// Van
 	///////////////////////////////////////////////////////////////////////////////
 	class Exile_Car_Van_Black 							{ quality = 1; price = 2000; };
 	class Exile_Car_Van_White 							{ quality = 1; price = 2000; };
@@ -1534,7 +1511,7 @@ class CfgExileArsenal
 	class Exile_Car_Van_Guerilla08 						{ quality = 1; price = 2300; };
 
 	///////////////////////////////////////////////////////////////////////////////
-	// Van (Box) 
+	// Van (Box)
 	///////////////////////////////////////////////////////////////////////////////
 	class Exile_Car_Van_Box_Black 						{ quality = 1; price = 1900; };
 	class Exile_Car_Van_Box_White 						{ quality = 1; price = 1900; };
@@ -1549,7 +1526,7 @@ class CfgExileArsenal
 	class Exile_Car_Van_Box_Guerilla08 					{ quality = 1; price = 2000; };
 
 	///////////////////////////////////////////////////////////////////////////////
-	// Van (Fuel) 
+	// Van (Fuel)
 	///////////////////////////////////////////////////////////////////////////////
 	class Exile_Car_Van_Fuel_Black 						{ quality = 1; price = 4500; };
 	class Exile_Car_Van_Fuel_White 						{ quality = 1; price = 4500; };
@@ -1562,12 +1539,564 @@ class CfgExileArsenal
 	// Zamak
 	///////////////////////////////////////////////////////////////////////////////
 	class Exile_Car_Zamak 								{ quality = 1; price = 3000; };
+
+
+
+    ///////////////////////////////////////////////////////////////////////////////
+	//                                Custom Addon
+	///////////////////////////////////////////////////////////////////////////////
+
+
+    ///////////////////////////////////////////////////////////////////////////////
+    // HLC Guns
+    ///////////////////////////////////////////////////////////////////////////////
+
+    hlc_rifle_l1a1slr
+    hlc_rifle_SLR
+    hlc_rifle_STG58F
+    hlc_rifle_FAL5061
+    hlc_rifle_c1A1
+    hlc_rifle_LAR
+    hlc_rifle_SLRchopmod
+    hlc_rifle_falosw
+    hlc_rifle_osw_GL
+    hlc_rifle_g3sg1
+    hlc_rifle_psg1
+    hlc_rifle_g3a3
+    hlc_rifle_g3ka4
+    HLC_Rifle_g3ka4_GL
+    hlc_rifle_hk51
+    hlc_rifle_hk53
+    hlc_rifle_M14
+    hlc_rifle_M21
+    hlc_rifle_M14DMR
+    hlc_rifle_m14sopmod
+    hlc_lmg_M60E4
+    hlc_lmg_minimipara
+    hlc_lmg_minimi
+    hlc_lmg_minimi_railed
+    hlc_lmg_m249para
+    hlc_lmg_M249E2
+    hlc_m249_pip1
+    hlc_m249_pip2
+    hlc_m249_pip3
+    hlc_m249_pip4
+    hlc_rifle_ak74
+    hlc_rifle_aks74
+    hlc_rifle_aks74u
+    hlc_rifle_ak47
+    hlc_rifle_akm
+    hlc_rifle_rpk
+    hlc_rifle_ak12
+    hlc_rifle_akmgl
+    hlc_rifle_aks74_GL
+    hlc_rifle_RU556
+    hlc_rifle_RU5562
+    hlc_rifle_Colt727
+    hlc_rifle_Colt727_GL
+    hlc_rifle_bcmjack
+    hlc_rifle_Bushmaster300
+    hlc_rifle_vendimus
+    hlc_rifle_SAMR
+    hlc_rifle_honeybase
+    hlc_rifle_honeybadger
+    hlc_rifle_aug
+    hlc_rifle_auga1_t
+    hlc_rifle_auga1_B
+    hlc_rifle_auga1carb
+    hlc_rifle_auga1carb_t
+    hlc_rifle_auga1carb_b
+    hlc_rifle_aughbar
+    hlc_rifle_aughbar_b
+    hlc_rifle_aughbar_t
+    hlc_rifle_augpara
+    hlc_rifle_augpara_b
+    hlc_rifle_augpara_t
+    hlc_rifle_auga2
+    hlc_rifle_auga2_b
+    hlc_rifle_auga2_t
+    hlc_rifle_auga2carb
+    hlc_rifle_auga2carb_t
+    hlc_rifle_auga2carb_b
+    hlc_rifle_auga2lsw
+    hlc_rifle_auga2lsw_t
+    hlc_rifle_auga2lsw_b
+    hlc_rifle_auga2para
+    hlc_rifle_auga2para_b
+    hlc_rifle_auga2para_t
+    hlc_rifle_augsr
+    hlc_rifle_augsr_b
+    hlc_rifle_augsr_t
+    hlc_rifle_augsrcarb
+    hlc_rifle_augsrcarb_t
+    hlc_rifle_augsrcarb_b
+    hlc_rifle_augsrhbar
+    hlc_rifle_augsrhbar_b
+    hlc_rifle_augsrhbar_t
+    hlc_rifle_auga3
+    hlc_rifle_auga3_bl
+    hlc_rifle_auga3_b
+    hlc_rifle_auga3_GL
+    hlc_rifle_auga3_GL_BL
+    hlc_rifle_auga3_GL_B
+    hlc_smg_mp5a2
+    hlc_smg_mp5a3
+    hlc_smg_mp5a4
+    hlc_smg_mp5n
+    hlc_smg_mp510
+    hlc_smg_mp5sd5
+    hlc_smg_mp5sd6
+    hlc_smg_9mmar
+    hlc_rifle_awcovert
+    hlc_rifle_awcovert_BL
+    hlc_rifle_awcovert_FDE
+    hlc_rifle_awmagnum
+    hlc_rifle_awmagnum_BL
+    hlc_rifle_awmagnum_FDE
+    hlc_rifle_awMagnum_FDE_ghillie
+    hlc_rifle_awMagnum_BL_ghillie
+    hlc_rifle_awMagnum_OD_ghillie
+
+
+    ///////////////////////////////////////////////////////////////////////////////
+    // HLC Ammo
+    ///////////////////////////////////////////////////////////////////////////////
+
+    hlc_20Rnd_762x51_B_G3
+    hlc_20rnd_762x51_T_G3
+    hlc_50rnd_762x51_M_G3
+    hlc_20Rnd_762x51_B_M14
+    hlc_20rnd_762x51_T_M14
+    hlc_50rnd_762x51_M_M14
+    hlc_20Rnd_762x51_B_fal
+    hlc_20Rnd_762x51_t_fal
+    hlc_20Rnd_762x51_S_fal
+    hlc_50rnd_762x51_M_FAL
+    hlc_100Rnd_762x51_B_M60E4
+    hlc_100Rnd_762x51_T_M60E4
+    hlc_100Rnd_762x51_M_M60E4
+    hlc_200rnd_556x45_M_SAW
+    hlc_200rnd_556x45_T_SAW
+    hlc_200rnd_556x45_B_SAW
+    29rnd_300BLK_STANAG
+    29rnd_300BLK_STANAG_T
+    29rnd_300BLK_STANAG_S
+    hlc_30rnd_556x45_EPR
+    hlc_30rnd_556x45_SOST
+    hlc_30rnd_556x45_SPR
+    hlc_30Rnd_545x39_B_AK
+    hlc_30Rnd_545x39_T_AK
+    hlc_30Rnd_545x39_EP_AK
+    hlc_45Rnd_545x39_t_rpk
+    hlc_30Rnd_762x39_b_ak
+    hlc_30Rnd_762x39_t_ak
+    hlc_45Rnd_762x39_t_rpk
+    hlc_45Rnd_762x39_m_rpk
+    hlc_30Rnd_556x45_B_AUG
+    hlc_30Rnd_556x45_SOST_AUG
+    hlc_30Rnd_556x45_SPR_AUG
+    hlc_30Rnd_556x45_T_AUG
+    hlc_40Rnd_556x45_B_AUG
+    hlc_40Rnd_556x45_SOST_AUG
+    hlc_40Rnd_556x45_SPR_AUG
+    hlc_25Rnd_9x19mm_M882_AUG
+    hlc_25Rnd_9x19mm_JHP_AUG
+    hlc_25Rnd_9x19mm_subsonic_AUG
+    hlc_VOG25_AK
+    hlc_GRD_White
+    hlc_GRD_red
+    hlc_GRD_green
+    hlc_GRD_blue
+    hlc_GRD_orange
+    hlc_GRD_purple
+    hlc_30Rnd_9x19_B_MP5
+    hlc_30Rnd_9x19_GD_MP5
+    hlc_30Rnd_9x19_SD_MP5
+    hlc_30Rnd_10mm_B_MP5
+    hlc_30Rnd_10mm_JHP_MP5
+    hlc_5rnd_300WM_FMJ_AWM
+    hlc_5rnd_300WM_AP_AWM
+    hlc_5rnd_300WM_BTSP_AWM
+    hlc_5rnd_300WM_mk248_AWM
+    hlc_5rnd_300WM_SBT_AWM
+
+    ///////////////////////////////////////////////////////////////////////////////
+    // HLC Attachments
+    ///////////////////////////////////////////////////////////////////////////////
+
+
+    HLC_Optic_PSO1
+    HLC_Optic_1p29
+    hlc_optic_kobra
+    hlc_muzzle_545SUP_AK
+    hlc_muzzle_762SUP_AK
+    hlc_muzzle_556NATO_KAC
+    hlc_muzzle_300blk_KAC
+    hlc_muzzle_snds_AUG
+    hlc_muzzle_snds_a6AUG
+    hlc_optic_artel_m14
+    hlc_optic_LRT_m14
+    hlc_optic_suit
+    HLC_Optic_ZFSG1
+    hlc_optic_accupoint_g3
+    hlc_muzzle_snds_HK33
+    hlc_muzzle_snds_G3
+    hlc_muzzle_snds_M14
+    hlc_muzzle_snds_fal
+
+    ///////////////////////////////////////////////////////////////////////////////
+    // RH Guns
+    ///////////////////////////////////////////////////////////////////////////////
+
+    RH_m4
+    RH_m4_m203
+    RH_m4_ris
+    RH_m4_ris_m203
+    RH_m4_ris_m203s
+    RH_m4a1_ris
+    RH_m4a1_ris_m203
+    RH_m4a1_ris_m203s
+    RH_m4sbr
+    RH_m4sbr_g
+    RH_m4sbr_b
+    RH_m16a1
+    RH_m16a1gl
+    RH_m16a2
+    RH_m16a2gl
+    RH_m16a3
+    RH_m16a4
+    RH_m16a4gl
+    RH_m16a4_m
+    RH_mk12mod1
+    RH_samr
+    RH_m4m
+    RH_m4m_g
+    RH_m4m_b
+    RH_m4_moe
+    RH_m4_moe_g
+    RH_m4_moe_b
+    RH_m4a6
+    RH_m16a6
+    RH_hb
+    RH_hb_b
+    RH_hk416
+    RH_hk416c
+    RH_hk416s
+    RH_m27iar
+    RH_ar10
+    RH_mk11
+    RH_m110
+    RH_sr25ec
+    RH_sbr9
+
+    RH_m4_tg
+    RH_m4_des
+    RH_m4_wdl
+    RH_m4_m203_tg
+    RH_m4_m203_des
+    RH_m4_m203_wdl
+    RH_m4a1_ris_tg
+    RH_m4a1_ris_des
+    RH_m4a1_ris_wdl
+    RH_m4a1_ris_m203_tg
+    RH_m4a1_ris_m203_des
+    RH_m4a1_ris_m203_wdl
+    RH_m4a1_ris_m203s_tg
+    RH_m4a1_ris_m203s_des
+    RH_m4a1_ris_m203s_wdl
+    RH_m4_ris_m_tg
+    RH_m4_ris_m_des
+    RH_m4_ris_m_wdl
+    RH_m4a6_tg
+    RH_m4a6_des
+    RH_m4a6_wdl
+    RH_m16a4_tg
+    RH_m16a4_des
+    RH_m16a4_wdl
+    RH_m16a4gl_tg
+    RH_m16a4gl_des
+    RH_m16a4gl_wdl
+    RH_m16a4_m_tg
+    RH_m16a4_m_des
+    RH_m16a4_m_wdl
+    RH_hk416_tg
+    RH_hk416_des
+    RH_hk416_wdl
+    RH_hk416s_tg
+    RH_hk416s_des
+    RH_hk416s_wdl
+    RH_hk416c_tg
+    RH_hk416c_des
+    RH_hk416c_wdl
+    RH_m27iar_tg
+    RH_m27iar_des
+    RH_m27iar_wdl
+    RH_m16a6_tg
+    RH_m16a6_des
+    RH_m16a6_wdl
+    RH_Mk12mod1_tg
+    RH_Mk12mod1_des
+    RH_Mk12mod1_wdl
+    RH_SAMR_tg
+    RH_SAMR_des
+    RH_SAMR_wdl
+    RH_sbr9_tg
+    RH_sbr9_des
+    RH_sbr9_wdl
+
+    ///////////////////////////////////////////////////////////////////////////////
+    // RH Pistols
+    ///////////////////////////////////////////////////////////////////////////////
+
+    RH_deagle
+    RH_deagleg
+    RH_deagles
+    RH_deaglem
+    RH_cz75
+    RH_sw659
+    RH_usp
+    RH_mak
+    RH_m1911
+    RH_kimber
+    RH_kimber_nw
+    RH_uspm
+    RH_m9
+    RH_m9c
+    RH_vz61
+    RH_g18
+    RH_g17
+    RH_tt33
+    RH_mk2
+    RH_p226
+    RH_p226s
+    RH_g19
+    RH_g19t
+    RH_vp70
+    RH_mateba
+    RH_python
+    RH_mp412
+    RH_bull
+    RH_bullb
+    RH_ttracker
+    RH_ttracker_g
+    RH_fnp45
+    RH_fnp45t
+    RH_fn57
+    RH_fn57_g
+    RH_fn57_t
+    RH_gsh18
+    RH_tec9
+    RH_muzi
+
+    ///////////////////////////////////////////////////////////////////////////////
+    // RH  Ammo
+    ///////////////////////////////////////////////////////////////////////////////
+
+    RH_30Rnd_556x45_M855A1
+    RH_30Rnd_556x45_Mk262
+    RH_30Rnd_556x45_Mk318
+    RH_20Rnd_556x45_M855A1
+    RH_20Rnd_556x45_Mk262
+    RH_20Rnd_556x45_Mk318
+    RH_60Rnd_556x45_M855A1
+    RH_60Rnd_556x45_Mk262
+    RH_60Rnd_556x45_Mk318
+
+    RH_30Rnd_68x43_FMJ
+    RH_30Rnd_68x43_Match
+    RH_30Rnd_762x35_FMJ
+    RH_30Rnd_762x35_Match
+    RH_30Rnd_762x35_MSB
+
+    RH_20Rnd_762x51_M80A1
+    RH_20Rnd_762x51_Mk316LR
+    RH_20Rnd_762x51_Mk319
+    RH_20Rnd_762x51_LFMJSB
+    RH_20Rnd_762x51_AR10
+
+    RH_32Rnd_9mm_M822
+    RH_32Rnd_9mm_HP
+    RH_32Rnd_9mm_HPSB
+
+    ///////////////////////////////////////////////////////////////////////////////
+    // RH Accesories
+    ///////////////////////////////////////////////////////////////////////////////
+
+    RH_eotech553
+    RH_eotech553mag
+    RH_eotech553_tan
+    RH_eotech553mag_tan
+    RH_eotexps3
+    RH_eotexps3_tan
+    RH_eothhs1
+    RH_eothhs1_tan
+    RH_compm4s
+    RH_compm2
+    RH_compm2l
+    RH_compm2_tan
+    RH_compm2l_tan
+    RH_t1
+    RH_t1_tan
+    RH_reflex
+    RH_shortdot
+    RH_m3lr
+    RH_ta01nsn
+    RH_ta01nsn_2D
+    RH_ta31rco
+    RH_ta31rco_2D
+    RH_ta31rmr
+    RH_ta31rmr_2D
+    RH_ta01nsn_tan
+    RH_ta01nsn_tan_2D
+    RH_ta31rco_tan
+    RH_ta31rco_tan_2D
+    RH_ta31rmr_tan
+    RH_ta31rmr_tan_2D
+    RH_ta648
+    RH_accupoint
+    RH_leu_mk4
+    RH_c79
+    RH_c79_2D
+    RH_m145
+    RH_barska_rds
+    RH_cmore
+    RH_LTdocter
+    RH_LTdocterl
+    RH_zpoint
+    RH_anpvs4
+    RH_anpvs10
+    RH_pas13cl
+    RH_pas13cm
+    RH_pas13cmg
+    RH_pas13ch
+
+
+    RH_peq15
+    RH_peq15_top
+    RH_peq15b
+    RH_peq15b_top
+    RH_peq2
+    RH_peq2_top
+    RH_SFM952V
+    RH_SFM952V_tan
+
+
+    RH_qdss_nt4
+    RH_qdss_nt4_tg
+    RH_qdss_nt4_des
+    RH_qdss_nt4_wdl
+    RH_saker
+    RH_saker_tg
+    RH_saker_des
+    RH_saker_wdl
+    RH_Saker762
+    RH_Saker762_tg
+    RH_Saker762_des
+    RH_Saker762_wdl
+    RH_fa556
+    RH_fa556_tg
+    RH_fa556_des
+    RH_fa556_wdl
+    RH_fa762
+    RH_fa762_tg
+    RH_fa762_des
+    RH_fa762_wdl
+    RH_spr_mbs
+    RH_spr_mbs_tg
+    RH_spr_mbs_des
+    RH_spr_mbs_wdl
+    RH_tundra
+    RH_tundra_tg
+    RH_tundra_des
+    RH_tundra_wdl
+    RH_m110sd
+    RH_m110sd_t
+
+    RH_HBLM
+    RH_HBLM_tg
+    RH_HBLM_des
+    RH_HBLM_wdl
+    RH_TD_ACB
+    RH_TD_ACB_g
+    RH_TD_ACB_b
+
+    ///////////////////////////////////////////////////////////////////////////////
+    // PG Services Clothing
+    ///////////////////////////////////////////////////////////////////////////////
+
+    U_PMC_GTShirt_DJeans
+    U_PMC_GTShirt_SJeans
+    U_PMC_BlkTShirt_DJeans
+    U_PMC_BlkTShirt_SJeans
+    U_PMC_BluTShirt_SJeans
+    U_PMC_WTShirt_DJeans
+    U_PMC_BluePlaidShirt_BeigeCords
+    U_PMC_RedPlaidShirt_DenimCords
+    U_PMC_BlackPoloShirt_BeigeCords
+    U_PMC_BluPolo_BgPants
+    U_PMC_BgPolo_GrnPants
+    U_PMC_BlckPolo_BgPants
+    U_PMC_BlckPolo_BluPants
+    U_PMC_BluPolo_GrnPants
+    U_PMC_BrnPolo_BgPants
+    U_PMC_BrnPolo_BluPants
+    U_PMC_GrnPolo_BgPants
+    U_PMC_WhtPolo_BgPants
+    U_PMC_WhtPolo_BluPants
+    U_PMC_WhtPolo_GrnPants
+    U_PMC_CombatUniformRS_BSGPBB
+    U_PMC_CombatUniformRS_BSGPSB
+    U_PMC_CombatUniformRS_BSSPBB
+    U_PMC_CombatUniformRS_BSSPSB
+    U_PMC_CombatUniformRS_GSBPBB
+    U_PMC_CombatUniformRS_GSSPBB
+    U_PMC_CombatUniformRS_IndPBSBB
+    U_PMC_CombatUniformRS_SSBPBB
+    U_PMC_CombatUniformRS_SSGPBB
+    U_PMC_CombatUniformRS_SSGPSB
+    U_PMC_CombatUniformRS_ChckDBS_GPSB
+    U_PMC_CombatUniformRS_ChckLB_GPBB
+    U_PMC_CombatUniformRS_ChckLR_SPBB
+    U_PMC_CombatUniformRS_ChckP_BPBB
+    U_PMC_CombatUniformLS_BSGPBB
+    U_PMC_CombatUniformLS_BSGPSB
+    U_PMC_CombatUniformLS_BSSPBB
+    U_PMC_CombatUniformLS_BSSPSB
+    U_PMC_CombatUniformLS_GSBPBB
+    U_PMC_CombatUniformLS_GSSPBB
+    U_PMC_CombatUniformLS_IndPBSBB
+    U_PMC_CombatUniformLS_SSBPBB
+    U_PMC_CombatUniformLS_SSGPBB
+    U_PMC_CombatUniformLS_SSGPSB
+    U_PMC_CombatUniformLS_ChckDBS_GPSB
+    U_PMC_CombatUniformLS_ChckLB_GPBB
+    U_PMC_CombatUniformLS_ChckLR_SPBB
+    U_PMC_CombatUniformLS_ChckP_BPBB
+
+    V_PlateCarrier1_PMC_rgr
+    V_PlateCarrier1_PMC_blk
+    V_PlateCarrier1_PMC_marpat
+    V_PlateCarrier1_PMC_khki
+    V_PlateCarrierInd_PMC_blk
+    V_PlateCarrierInd_PMC_grn
+    V_TacVest_darkblck
+    H_Cap_pmc
+    H_Cap_tan_pmc
+    H_Cap_pmc_headphones
+    H_Capbw_pmc
+    H_Capbw_tan_pmc
+    H_Booniehat_rgr
+    H_Booniehat_GCAMO
+    H_Booniehat_DMARPAT
+    H_HelmetB_plain_blk
+    H_PilotHelmetHeli_PMC
+
 };
-class CfgExileCustomCode 
+class CfgExileCustomCode
 {
 	/*
 		You can overwrite every single file of our code without touching it.
-		To do that, add the function name you want to overwrite plus the 
+		To do that, add the function name you want to overwrite plus the
 		path to your custom file here. If you wonder how this works, have a
 		look at our bootstrap/fn_preInit.sqf function.
 
@@ -1586,7 +2115,7 @@ class CfgExileMusic
 	Combat[] = {"ExileTrack06","ExileTrack07"};
 	Intro[] = {"ExileTrack02","ExileTrack03"};
 };
-class CfgFlags 
+class CfgFlags
 {
 	class USA
 	{
@@ -1599,10 +2128,10 @@ class CfgTerritories
 {
 	// Base Cost / Radius
 	// Level 1 is allways for Pop Tabs, >= 2 for Respect
-	prices[] = 
+	prices[] =
 	{
 		{5000,	15}, // Level 1
-		{10000,	30}, // Level 2 
+		{10000,	30}, // Level 2
 		{15000,	45}, // Level 3
 		{20000,	60}, // Level 4
 		{25000,	75}, // Level 5
@@ -1613,7 +2142,7 @@ class CfgTerritories
 		{50000,	150}  // Level 10
 	};
 
-	noNeedForTerritory[] = 
+	noNeedForTerritory[] =
 	{
 		"Exile_Construction_CampFire_Preview",
 		"Exile_Construction_CamoTent_Preview"
@@ -1622,19 +2151,19 @@ class CfgTerritories
 	// Defines the period in days where protection money needs to be payed.
 	// Every time you pay the protection money, the "due date" will be
 	// pro-longed by that period too.
-	protectionPeriod = 21; 
+	protectionPeriod = 21;
 
 	// Amount of pop tabs or respect per object to pay
 	popTabAmountPerObject = 10;
 	respectAmountPerObject = 5;
 };
-class CfgTraderCategories 
+class CfgTraderCategories
 {
 	class Community
 	{
 		name = "Community Items";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\uniform_ca.paa";
-		items[] = 
+		items[] =
 		{
 			// Add your items here <3
 		};
@@ -1644,7 +2173,7 @@ class CfgTraderCategories
 	{
 		name = "Uniforms";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\uniform_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"U_C_Journalist",
 			"U_C_Poloshirt_blue",
@@ -1723,7 +2252,7 @@ class CfgTraderCategories
 	{
 		name = "Vests";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\vest_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"V_Press_F",
 			"V_Rangemaster_belt",
@@ -1770,7 +2299,7 @@ class CfgTraderCategories
 		};
 	};
 
-	class Headgear 
+	class Headgear
 	{
 		name = "Headgear";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\headgear_ca.paa";
@@ -1882,22 +2411,22 @@ class CfgTraderCategories
 	};
 
 
-	class PointerAttachments 
+	class PointerAttachments
 	{
 		name = "Pointer Attachments";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"acc_flashlight",
 			"acc_pointer_IR"
 		};
 	};
 
-	class BipodAttachments 
+	class BipodAttachments
 	{
 		name = "Bipod Attachments";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itembipod_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"bipod_01_F_blk",
 			"bipod_01_F_mtp",
@@ -1910,11 +2439,11 @@ class CfgTraderCategories
 		};
 	};
 
-	class MuzzleAttachments 
+	class MuzzleAttachments
 	{
 		name = "Suppressor Attachments";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemmuzzle_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"muzzle_snds_338_black",
 			"muzzle_snds_338_green",
@@ -1935,7 +2464,7 @@ class CfgTraderCategories
 	{
 		name = "Unmanned Aerial Vehicles";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\gps_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"I_UavTerminal",
 			"I_UAV_01_backpack_F"
@@ -1946,7 +2475,7 @@ class CfgTraderCategories
 	{
 		name = "Static Machine Guns";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"O_HMG_01_support_F",
 			//"O_HMG_01_support_high_F", // Does not seem to work with HMG01, only the lower version does
@@ -1954,11 +2483,11 @@ class CfgTraderCategories
 		};
 	};
 
-	class OpticAttachments 
+	class OpticAttachments
 	{
 		name = "Scopes";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemoptic_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"optic_Aco",
 			"optic_ACO_grn",
@@ -1979,20 +2508,16 @@ class CfgTraderCategories
 			"optic_LRPS",
 			"optic_MRCO",
 			"optic_MRD",
-			"optic_Nightstalker",
-			"optic_NVS",
 			"optic_SOS",
-			"optic_tws",
-			"optic_tws_mg",
 			"optic_Yorris"
 		};
 	};
 
-	class Hardware 
+	class Hardware
 	{
 		name = "Hardware";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"Exile_Item_Rope",
 			"Exile_Item_DuctTape",
@@ -2008,7 +2533,7 @@ class CfgTraderCategories
 		};
 	};
 
-	class Food 
+	class Food
 	{
 		name = "Fast Food";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
@@ -2023,7 +2548,7 @@ class CfgTraderCategories
 		};
 	};
 
-	class Drinks 
+	class Drinks
 	{
 		name = "Drinks";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
@@ -2039,7 +2564,7 @@ class CfgTraderCategories
 	{
 		name = "Tools";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"Exile_Item_Matches",
 			"Exile_Item_CookingPot",
@@ -2063,7 +2588,7 @@ class CfgTraderCategories
 	{
 		name = "FirstAid";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"Exile_Item_InstaDoc"
 		};
@@ -2072,12 +2597,12 @@ class CfgTraderCategories
 	{
 		name = "Special Environment";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"B_Parachute",
 			"V_RebreatherB",
 			"V_RebreatherIA",
-			"V_RebreatherIR"		
+			"V_RebreatherIR"
 		};
 	};
 
@@ -2085,7 +2610,7 @@ class CfgTraderCategories
 	{
 		name = "Backpacks";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\backpack_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"B_AssaultPack_blk",
 			"B_AssaultPack_cbr",
@@ -2127,7 +2652,7 @@ class CfgTraderCategories
 	{
 		name = "Ammunition";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"100Rnd_65x39_caseless_mag",
 			"100Rnd_65x39_caseless_mag_Tracer",
@@ -2168,11 +2693,11 @@ class CfgTraderCategories
 		};
 	};
 
-	class Flares 
+	class Flares
 	{
 		name = "Flares";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"Chemlight_blue",
 			"Chemlight_green",
@@ -2192,11 +2717,11 @@ class CfgTraderCategories
 		};
 	};
 
-	class Smokes 
+	class Smokes
 	{
 		name = "Smokes";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"SmokeShell",
 			"SmokeShellBlue",
@@ -2220,13 +2745,13 @@ class CfgTraderCategories
 			"3Rnd_SmokeRed_Grenade_shell",
 			"3Rnd_SmokeYellow_Grenade_shell"
 		};
-	};	
+	};
 
 	class Explosives
 	{
 		name = "Explosives";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargothrow_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"HandGrenade",
 			"MiniGrenade",
@@ -2249,11 +2774,11 @@ class CfgTraderCategories
 		};
 	};
 
-	class Pistols 
+	class Pistols
 	{
 		name = "Pistols";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\handgun_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"hgun_ACPC2_F",
 			"hgun_P07_F",
@@ -2264,11 +2789,11 @@ class CfgTraderCategories
 		};
 	};
 
-	class SubMachineGuns 
+	class SubMachineGuns
 	{
 		name = "Sub Machine Guns";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"hgun_PDW2000_F",
 			"SMG_01_F",
@@ -2276,11 +2801,11 @@ class CfgTraderCategories
 		};
 	};
 
-	class LightMachineGuns 
+	class LightMachineGuns
 	{
 		name = "Light Machine Guns";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"arifle_MX_SW_Black_F",
 			"arifle_MX_SW_F",
@@ -2298,7 +2823,7 @@ class CfgTraderCategories
 	{
 		name = "Assault Rifles";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"arifle_Katiba_C_F",
 			"arifle_Katiba_F",
@@ -2326,7 +2851,7 @@ class CfgTraderCategories
 	{
 		name = "Sniper Rifles";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"arifle_MXM_Black_F",
 			"arifle_MXM_F",
@@ -2358,7 +2883,7 @@ class CfgTraderCategories
 	{
 		name = "Bikes";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"Exile_Bike_OldBike",
 			"Exile_Bike_MountainBike"
@@ -2369,7 +2894,7 @@ class CfgTraderCategories
 	{
 		name = "Cars";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"Exile_Car_Kart_Black",
 			"Exile_Bike_QuadBike_Black",
@@ -2393,7 +2918,7 @@ class CfgTraderCategories
 	{
 		name = "Trucks";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"Exile_Car_Van_Black",
 			"Exile_Car_Van_Box_Black",
@@ -2408,7 +2933,7 @@ class CfgTraderCategories
 	{
 		name = "Helicopters";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"Exile_Chopper_Hummingbird_Green",
 			"Exile_Chopper_Hummingbird_Civillian_Wasp",
@@ -2426,7 +2951,7 @@ class CfgTraderCategories
 	{
 		name = "Boats";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"Exile_Boat_RubberDuck_CSAT",
 			"Exile_Boat_RubberDuck_Digital",
@@ -2446,7 +2971,7 @@ class CfgTraderCategories
 	{
 		name = "Planes";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"Exile_Plane_Cessna"
 		};
@@ -2462,7 +2987,7 @@ class CfgTraders
 	{
 		name = "ARMORY";
 		showWeaponFilter = 1;
-		categories[] = 
+		categories[] =
 		{
 			"PointerAttachments",
 			"BipodAttachments",
@@ -2484,7 +3009,7 @@ class CfgTraders
 	{
 		name = "SPECIAL OPERATIONS";
 		showWeaponFilter = 1; // for noob tubes
-		categories[] = 
+		categories[] =
 		{
 			"Flares",
 			"Smokes",
@@ -2499,10 +3024,10 @@ class CfgTraders
 	 * Uniforms, vests, helmets, backpacks
 	 */
 	class Exile_Trader_Equipment
-	{	
+	{
 		name = "EQUIPMENT";
 		showWeaponFilter = 0;
-		categories[] = 
+		categories[] =
 		{
 			"Headgear",
 			"Uniforms",
@@ -2520,7 +3045,7 @@ class CfgTraders
 	{
 		name = "FAST FOOD";
 		showWeaponFilter = 0;
-		categories[] = 
+		categories[] =
 		{
 			"Food",
 			"Drinks"
@@ -2534,7 +3059,7 @@ class CfgTraders
 	{
 		name = "HARDWARE";
 		showWeaponFilter = 0;
-		categories[] = 
+		categories[] =
 		{
 			"Hardware"
 		};
@@ -2547,7 +3072,7 @@ class CfgTraders
 	{
 		name = "VEHICLE";
 		showWeaponFilter = 0;
-		categories[] = 
+		categories[] =
 		{
 			"Cars",
 			"Trucks"
@@ -2561,21 +3086,21 @@ class CfgTraders
 	{
 		name = "AIRCRAFT";
 		showWeaponFilter = 0;
-		categories[] = 
+		categories[] =
 		{
-			"Choppers", 
+			"Choppers",
 			"Planes"
 		};
 	};
 
 	/**
 	 * Sells ships and boats
-	 */ 
+	 */
 	class Exile_Trader_Boat
 	{
 		name = "BOAT";
 		showWeaponFilter = 0;
-		categories[] = 
+		categories[] =
 		{
 			"Boats"
 		};
@@ -2583,12 +3108,12 @@ class CfgTraders
 
 	/**
 	 * Sells Community Items
-	 */ 
+	 */
 	class Exile_Trader_CommunityCustoms
 	{
 		name = "COMMUNITY";
 		showWeaponFilter = 0;
-		categories[] = 
+		categories[] =
 		{
 			"Community"
 		};
@@ -2602,7 +3127,7 @@ class CfgVehicleCustoms
 	///////////////////////////////////////////////////////////////////////////////
 	class Exile_Bike_QuadBike_Abstract
 	{
-		skins[] = 
+		skins[] =
 		{
 			{"Exile_Bike_QuadBike_Black",		100},
 			{"Exile_Bike_QuadBike_Blue",		100},
@@ -2621,7 +3146,7 @@ class CfgVehicleCustoms
 	///////////////////////////////////////////////////////////////////////////////
 	class Exile_Boat_MotorBoat_Abstract
 	{
-		skins[] = 
+		skins[] =
 		{
 			{"Exile_Boat_MotorBoat_Police",		350},
 			{"Exile_Boat_MotorBoat_Orange",		300},
@@ -2634,7 +3159,7 @@ class CfgVehicleCustoms
 	///////////////////////////////////////////////////////////////////////////////
 	class Exile_Boat_RubberDuck_Abstract
 	{
-		skins[] = 
+		skins[] =
 		{
 			{"Exile_Boat_RubberDuck_CSAT",		200},
 			{"Exile_Boat_RubberDuck_Digital",	200},
@@ -2649,7 +3174,7 @@ class CfgVehicleCustoms
 	///////////////////////////////////////////////////////////////////////////////
 	class Exile_Boat_SDV_Abstract
 	{
-		skins[] = 
+		skins[] =
 		{
 			{"Exile_Boat_SDV_CSAT",		200},
 			{"Exile_Boat_SDV_Digital",	200},
@@ -2662,7 +3187,7 @@ class CfgVehicleCustoms
 	///////////////////////////////////////////////////////////////////////////////
 	class Exile_Chopper_Hellcat_Abstract
 	{
-		skins[] = 
+		skins[] =
 		{
 			{"Exile_Chopper_Hellcat_Green", 350},
 			{"Exile_Chopper_Hellcat_FIA", 	500}
@@ -2674,17 +3199,17 @@ class CfgVehicleCustoms
 	///////////////////////////////////////////////////////////////////////////////
 	class Exile_Car_Kart_Abstract
 	{
-		skins[] = 
+		skins[] =
 		{
-			{"Exile_Car_Kart_BluKing", 				100},	
+			{"Exile_Car_Kart_BluKing", 				100},
 			{"Exile_Car_Kart_RedStone", 			100},
-			{"Exile_Car_Kart_Vrana", 				100},	
-			{"Exile_Car_Kart_Green", 				100},	
-			{"Exile_Car_Kart_Blue", 				100},	
-			{"Exile_Car_Kart_Orange", 				100},	
-			{"Exile_Car_Kart_White", 				100},	
-			{"Exile_Car_Kart_Yellow", 				100},	
-			{"Exile_Car_Kart_Black", 				100}	
+			{"Exile_Car_Kart_Vrana", 				100},
+			{"Exile_Car_Kart_Green", 				100},
+			{"Exile_Car_Kart_Blue", 				100},
+			{"Exile_Car_Kart_Orange", 				100},
+			{"Exile_Car_Kart_White", 				100},
+			{"Exile_Car_Kart_Yellow", 				100},
+			{"Exile_Car_Kart_Black", 				100}
 		};
 	};
 
@@ -2693,7 +3218,7 @@ class CfgVehicleCustoms
 	///////////////////////////////////////////////////////////////////////////////
 	class Exile_Chopper_Hummingbird_Civillian_Abstract
 	{
-		skins[] = 
+		skins[] =
 		{
 			{"Exile_Chopper_Hummingbird_Civillian_Blue", 		350},
 			{"Exile_Chopper_Hummingbird_Civillian_Red", 		350},
@@ -2720,7 +3245,7 @@ class CfgVehicleCustoms
 	///////////////////////////////////////////////////////////////////////////////
 	class Exile_Chopper_Huron_Abstract
 	{
-		skins[] = 
+		skins[] =
 		{
 			{"Exile_Chopper_Huron_Black", 	450},
 			{"Exile_Chopper_Huron_Green", 	450}
@@ -2732,7 +3257,7 @@ class CfgVehicleCustoms
 	///////////////////////////////////////////////////////////////////////////////
 	class Exile_Chopper_Orca_Abstract
 	{
-		skins[] = 
+		skins[] =
 		{
 			{"Exile_Chopper_Orca_CSAT", 		350},
 			{"Exile_Chopper_Orca_Black", 		350},
@@ -2745,7 +3270,7 @@ class CfgVehicleCustoms
 	///////////////////////////////////////////////////////////////////////////////
 	class Exile_Chopper_Taru_Abstract
 	{
-		skins[] = 
+		skins[] =
 		{
 			{"Exile_Chopper_Taru_CSAT",		500},
 			{"Exile_Chopper_Taru_Black",	500}
@@ -2757,7 +3282,7 @@ class CfgVehicleCustoms
 	///////////////////////////////////////////////////////////////////////////////
 	class Exile_Chopper_Taru_Transport_Abstract
 	{
-		skins[] = 
+		skins[] =
 		{
 			{"Exile_Chopper_Taru_Transport_CSAT",	500},
 			{"Exile_Chopper_Taru_Transport_Black",	500}
@@ -2769,7 +3294,7 @@ class CfgVehicleCustoms
 	///////////////////////////////////////////////////////////////////////////////
 	class Exile_Chopper_Taru_Covered_Abstract
 	{
-		skins[] = 
+		skins[] =
 		{
 			{"Exile_Chopper_Taru_Covered_CSAT",		500},
 			{"Exile_Chopper_Taru_Covered_Black",	500}
@@ -2780,8 +3305,8 @@ class CfgVehicleCustoms
 	// Hatchback
 	///////////////////////////////////////////////////////////////////////////////
 	class Exile_Car_Hatchback_Abstract
-	{	
-		skins[] = 
+	{
+		skins[] =
 		{
 			{"Exile_Car_Hatchback_Rusty1", 			50},
 			{"Exile_Car_Hatchback_Rusty2", 			50},
@@ -2803,7 +3328,7 @@ class CfgVehicleCustoms
 	///////////////////////////////////////////////////////////////////////////////
 	class Exile_Car_Hatchback_Sport_Abstract
 	{
-		skins[] = 
+		skins[] =
 		{
 			{"Exile_Car_Hatchback_Sport_Red", 		100},
 			{"Exile_Car_Hatchback_Sport_Blue", 		100},
@@ -2819,7 +3344,7 @@ class CfgVehicleCustoms
 	///////////////////////////////////////////////////////////////////////////////
 	class Exile_Car_Offroad_Abstract
 	{
-		skins[] = 
+		skins[] =
 		{
 			{"Exile_Car_Offroad_Rusty1", 		50},
 			{"Exile_Car_Offroad_Rusty2", 		50},
@@ -2850,7 +3375,7 @@ class CfgVehicleCustoms
 	///////////////////////////////////////////////////////////////////////////////
 	class Exile_Car_Offroad_Armed_Abstract
 	{
-		skins[] = 
+		skins[] =
 		{
 			{"Exile_Car_Offroad_Armed_Guerilla01",	250},
 			{"Exile_Car_Offroad_Armed_Guerilla02",	250},
@@ -2872,7 +3397,7 @@ class CfgVehicleCustoms
 	///////////////////////////////////////////////////////////////////////////////
 	class Exile_Car_Offroad_Repair_Abstract
 	{
-		skins[] = 
+		skins[] =
 		{
 			{"Exile_Car_Offroad_Repair_Civillian",		150},
 			{"Exile_Car_Offroad_Repair_Red",			150},
@@ -2901,7 +3426,7 @@ class CfgVehicleCustoms
 	///////////////////////////////////////////////////////////////////////////////
 	class Exile_Car_SUV_Abstract
 	{
-		skins[] = 
+		skins[] =
 		{
 			{"Exile_Car_SUV_Red", 		100},
 			{"Exile_Car_SUV_Black", 	150},
@@ -2911,11 +3436,11 @@ class CfgVehicleCustoms
 	};
 
 	///////////////////////////////////////////////////////////////////////////////
-	// Van 
+	// Van
 	///////////////////////////////////////////////////////////////////////////////
 	class Exile_Car_Van_Abstract
 	{
-		skins[] = 
+		skins[] =
 		{
 			{"Exile_Car_Van_Black",			100},
 			{"Exile_Car_Van_White",			100},
@@ -2932,11 +3457,11 @@ class CfgVehicleCustoms
 	};
 
 	///////////////////////////////////////////////////////////////////////////////
-	// Van (Box) 
+	// Van (Box)
 	///////////////////////////////////////////////////////////////////////////////
 	class Exile_Car_Van_Box_Abstract
 	{
-		skins[] = 
+		skins[] =
 		{
 			{"Exile_Car_Van_Box_Black",				100},
 			{"Exile_Car_Van_Box_White",				100},
@@ -2953,11 +3478,11 @@ class CfgVehicleCustoms
 	};
 
 	///////////////////////////////////////////////////////////////////////////////
-	// Van (Fuel) 
+	// Van (Fuel)
 	///////////////////////////////////////////////////////////////////////////////
 	class Exile_Car_Van_Fuel_Abstract
 	{
-		skins[] = 
+		skins[] =
 		{
 			{"Exile_Car_Van_Fuel_Black",			100},
 			{"Exile_Car_Van_Fuel_White",			100},
