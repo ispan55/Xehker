@@ -106,9 +106,6 @@ A3XAI_dynamicLootBlacklist = [];
 //Enable or disable radio message receiving. Players with radios or part of a group with at least one radio will be able to intercept some AI communications. (Default: false)
 A3XAI_radioMsgs = false;
 
-//Enable or disable AI death messages. Messages will be visible to all group members of player responsible for killing the AI unit. (Default: false)
-A3XAI_deathMessages = false;
-
 
 /*	Shared AI Unit Settings. These settings affect all AI spawned unless noted otherwise.
 --------------------------------------------------------------------------------------------------------------------*/
@@ -116,7 +113,7 @@ A3XAI_deathMessages = false;
 //Sets side/faction for AI spawned by A3XAI. If A3XAI units are hostile with AI spawned from other install addons, consider changing this setting. Acceptable sides: east or west (Default: east)
 A3XAI_side = east;
 
-//Number of online players required for maximum (or minimum) AI spawn chance. Affects Static, Dynamic, Random AI spawns. (Default: 20)
+//Number of online players required for maximum (or minimum) AI spawn chance. Affects Static, Dynamic, Random AI spawns. (Default: 10)
 A3XAI_playerCountThreshold = 10;
 
 //true: Spawn chance multiplier scales upwards from value defined by A3XAI_chanceScalingThreshold to 1.00. false: Spawn chance multiplier scales downwards from 1.00 to A3XAI_chanceScalingThreshold.
@@ -158,6 +155,9 @@ A3XAI_spawnChance_wilderness = 0.50; //0.50
 //(For dynamic and random spawns only) Defines amount of time to wait in seconds until cleaning up temporary blacklist area after dynamic/random spawn is deactivated (Default: 1200)
 A3XAI_tempBlacklistTime = 1200;
 
+//Enable or disable AI death messages. Messages will be visible to all group members of player responsible for killing the AI unit. (Default: true)
+A3XAI_deathMessages = true;
+
 //If enabled, AI group will attempt to track down player responsible for killing a group member. (Default: true)
 A3XAI_findKiller = true;
 
@@ -185,10 +185,14 @@ A3XAI_enableHealing = true;
 A3XAI_removeExplosiveAmmo = true;
 
 //if enabled, AI units suffer no damage from vehicle collisions. (Default: true)
-A3XAI_noCollisionDamage = true;
+A3XAI_noCollisionDamage = false;
 
 //If enabled, AI killed by vehicle collisions will have their gear removed (Default: true)
 A3XAI_roadKillPenalty = true;
+
+//Array of positions defining trader locations. Use this if your server is not using the standard Exile trader markers in mission.sqm
+//For performance reasons, do not add locations other than actual trader positions to this array.
+A3XAI_traderAreaLocations = [[10090.391,4841.123,8.0921993],[3967.1768,9258.7188,150.27356],[3268.813,3395.1558,232.81172]];
 
 
 /*	Static Infantry AI Spawning Settings
@@ -214,7 +218,7 @@ A3XAI_respawnLimit_capitalCity = -1;
 A3XAI_respawnLimit_remoteArea = -1;
 
 //Add name of location as displayed on map prevent static AI spawns from being created in these locations. Location names are case-sensitive (Example: ["Aggelochori","Panochori","Zaros"])
-A3XAI_staticBlacklistLocations = [];
+A3XAI_staticBlacklistLocations = ["Rama","Kupres","Esseker","Borosh","NoviGrad"];
 
 
 /*	Dynamic Infantry AI Spawning Settings. Probabilities should add up to 1.00
@@ -262,7 +266,7 @@ A3XAI_minRandSpawnDist = 0;
 A3XAI_vehicleDespawnTime = 600;
 
 //Enable player use of AI vehicles. Players must either disable the vehicle or kill all units of the group in order to access the vehicle. (Default: false)
-A3XAI_vehiclesAllowedForPlayers = true;
+A3XAI_vehiclesAllowedForPlayers = false;
 
 //Add name of location as displayed on map prevent AI vehicle patrols from travelling to these locations. Location names are case-sensitive. (Example: ["Aggelochori","Panochori","Zaros"])
 //Note: Vehicles may still pass through these areas, but will become non-hostile towards players until they travel 600m away from the area.
@@ -279,7 +283,7 @@ A3XAI_waypointBlacklistLand = [];  //Affects Land vehicles (including UGVs)
 --------------------------------------------------------------------------------------------------------------------*/
 
 //Global maximum number of active AI air vehicle patrols. Set at 0 to disable (Default: 0).
-A3XAI_maxHeliPatrols = 3;
+A3XAI_maxHeliPatrols = 0;
 
 //Probability of spawning Level 0/1/2/3 AI air vehicle patrol spawns. Probabilities should add up to 1.00
 A3XAI_levelChancesAir = [0.00,0.50,0.35,0.15];
@@ -305,7 +309,7 @@ A3XAI_airDetectChance = 0.80;
 
 //Probability of AI to deploy infantry units by parachute if players are nearby when helicopter is investigating a waypoint. (Default: 0.50)
 //Affects: Air vehicle patrols.
-A3XAI_paraDropChance = 0.50;
+A3XAI_paraDropChance = 0.75;
 
 //Cooldown time for AI paradrop deployment in seconds. (Default: 1800).
 //Affects: Air vehicle patrols.
@@ -313,7 +317,7 @@ A3XAI_paraDropCooldown = 1800;
 
 //Number of infantry AI to paradrop if players are nearby when helicopter is investigating a waypoint, or if helicopter is reinforcing a dynamic AI spawn. Limited by number of cargo seats available in the vehicle. (Default: 3)
 //Affects: Air vehicle patrols, air reinforcements.
-A3XAI_paraDropAmount = 3;
+A3XAI_paraDropAmount = 5;
 
 
 /*	AI Land Vehicle patrol settings. These AI vehicles will randomly travel between different cities and towns.
@@ -345,14 +349,10 @@ A3XAI_vehList = [
 	["Exile_Car_Offroad_Rusty3",5],
     ["Exile_Car_Offroad_Repair_Civillian",5],
     ["Exile_Car_Offroad_Armed_Guerilla01",5],
-    ["Exile_Car_Strider",5],
-    ["Exile_Car_Hunter",5],
-    ["Exile_Car_Ifrit",5],
     ["Exile_Car_Van_Black",5],
     ["Exile_Car_Van_Box_Black",5],
 	["Exile_Car_Van_Fuel_Black",5],
     ["Exile_Car_Zamak",5],
-    ["Exile_Car_Tempest",5],
 	["Exile_Car_HEMMT",5]
 ];
 
@@ -446,7 +446,7 @@ A3XAI_UAVDetectChance = 0.80;
 --------------------------------------------------------------------------------------------------------------------*/
 
 //Global maximum number of active UGV patrols. Set at 0 to disable (Default: 0).
-A3XAI_maxUGVPatrols = 5;
+A3XAI_maxUGVPatrols = 3;
 
 //Classnames of UGV types to use, with the maximum amount of each type to spawn.
 A3XAI_UGVList = [
@@ -608,12 +608,6 @@ A3XAI_miscLootCount = 2;
 
 //Chance to add a single InstaDoc to group loot pool per unit (Default: 0.25)
 A3XAI_chanceFirstAidKit = 0.25;
-
-//Chance to add each edible item to group loot pool per unit (Default: 0.40)
-A3XAI_chanceFoodLoot = 0.40;
-
-//Chance to add each generic loot item to group loot pool per unit (Default: 0.40)
-A3XAI_chanceMiscLoot = 0.40;
 
 //Probability to successfully pull a random item from loot pool for level 0-3 AI. Influences the rate at which loot items are added to units.
 A3XAI_lootPullChance0 = 0.20; //Default for level 0 AI: 0.20

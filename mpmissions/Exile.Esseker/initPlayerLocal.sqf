@@ -12,6 +12,9 @@
 
 */
 
+//_________Zombies by CaptionJack_________//
+[] execVM "ZOM\init.sqf";
+
 //_________Nightime by WolfkillArcadia_________//
 if (hasInterface) then {
 //    [] execVM "core\night\initNight.sqf";
