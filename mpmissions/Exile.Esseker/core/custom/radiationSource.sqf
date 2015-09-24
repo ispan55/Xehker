@@ -64,14 +64,17 @@ while {_currentAliveUnits > 0} do
 
         _totalDamage = _damage - (_damage / 100 * _damageRed);
 
-        if (_totalDamage <= 0.001 and _x == player) then {hint format ["!!!Warning!!! - High Amounts of radiation detected! Continued exposure will result in death"];}
-        else
-        {
-            if (_totalDamage <= 0.01 and _x == player) then {hint format ["!!!Warning!!! - High Amounts of radiation detected! Continued exposure will result in death"];}
-            else
-            {
-                if (_x == player) then {hint format ["!!!Warning!!! - High Amounts of radiation detected! Continued exposure will result in death"];};
-            };
+        if (_x == player) then {
+            _message = "<t align='right' size='1.25'>Warning! High levels of radiation detected!</t>";
+            [
+            	parseText _message,
+            	[safezoneX, safezoneY + safeZoneH * 0.4, safezoneW * 0.3, safeZoneH * 0.25],
+            	nil,
+            	6,
+            	0.7,
+            	0
+            ]
+            spawn BIS_fnc_textTiles;
         };
 
         //set the current damage for the unit

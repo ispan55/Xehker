@@ -1123,8 +1123,134 @@ class Mission
 	};
 	class Sensors
 	{
-		items=3;
+		items=11;
 		class Item0
+		{
+			position[]={-102.3392,205.60027,6171.1665};
+			a=100;
+			b=6500;
+			rectangular=1;
+			activationBy="ANY";
+			repeating=1;
+			timeoutMin=10;
+			timeoutMax=10;
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="call{[thisList, 0.05, []] execVM ""core\custom\radiationSource.sqf""};";
+			class Effects
+			{
+			};
+		};
+		class Item1
+		{
+			position[]={-1199.624,205.45299,6175.9141};
+			a=1000;
+			b=8000;
+			rectangular=1;
+			activationBy="ANY";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="call{[thisList, 0.5, []] execVM ""core\custom\radiationSource.sqf""};";
+			class Effects
+			{
+			};
+		};
+		class Item2
+		{
+			position[]={6145.2451,315.00885,-99.295898};
+			a=6500;
+			b=100;
+			rectangular=1;
+			activationBy="ANY";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="call{[thisList, 0.05, []] execVM ""core\custom\radiationSource.sqf""};";
+			class Effects
+			{
+			};
+		};
+		class Item3
+		{
+			position[]={5800.3052,282.93085,-1204.8267};
+			a=8000;
+			b=1000;
+			rectangular=1;
+			activationBy="ANY";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="call{[thisList, 0.5, []] execVM ""core\custom\radiationSource.sqf""};";
+			class Effects
+			{
+			};
+		};
+		class Item4
+		{
+			position[]={12390.338,20.188702,6189.1348};
+			a=100;
+			b=6500;
+			rectangular=1;
+			activationBy="ANY";
+			repeating=1;
+			timeoutMin=10;
+			timeoutMax=10;
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="call{[thisList, 0.05, []] execVM ""core\custom\radiationSource.sqf""};";
+			class Effects
+			{
+			};
+		};
+		class Item5
+		{
+			position[]={13507.429,20.188627,6189.1338};
+			a=1000;
+			b=8000;
+			rectangular=1;
+			activationBy="ANY";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="call{[thisList, 0.5, []] execVM ""core\custom\radiationSource.sqf""};";
+			class Effects
+			{
+			};
+		};
+		class Item6
+		{
+			position[]={6128.27,102.09569,12388.52};
+			a=6500;
+			b=100;
+			rectangular=1;
+			activationBy="ANY";
+			repeating=1;
+			timeoutMin=10;
+			timeoutMax=10;
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="call{[thisList, 0.05, []] execVM ""core\custom\radiationSource.sqf""};";
+			class Effects
+			{
+			};
+		};
+		class Item7
+		{
+			position[]={6035.4785,111.91003,13490.78};
+			a=8000;
+			b=1000;
+			rectangular=1;
+			activationBy="ANY";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="call{[thisList, 0.5, []] execVM ""core\custom\radiationSource.sqf""};";
+			class Effects
+			{
+			};
+		};
+		class Item8
 		{
 			position[]={10090.391,8.0921993,4841.123};
 			a=175;
@@ -1142,7 +1268,7 @@ class Mission
 			{
 			};
 		};
-		class Item1
+		class Item9
 		{
 			position[]={3967.1768,150.27356,9258.7188};
 			a=175;
@@ -1160,7 +1286,7 @@ class Mission
 			{
 			};
 		};
-		class Item2
+		class Item10
 		{
 			position[]={3268.813,232.81172,3395.1558};
 			a=100;
