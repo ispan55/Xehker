@@ -20,7 +20,7 @@ class CfgClans
 	/*
 		A list of all characters allowed in a clan *name*
 	*/
-	clanNameAlphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 -!";
+	clanNameAlphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 -'[]{}()!";
 };
 class Exile_AbstractCraftingRecipe
 {
@@ -1542,7 +1542,7 @@ class CfgExileArsenal
 
 
 
-    
+
 };
 class CfgExileCustomCode
 {
