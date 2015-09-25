@@ -1,0 +1,8 @@
+> VehicleService
+45, Exile_Item_DuctTape
+35, Exile_Item_FuelCanisterEmpty
+10, Exile_Item_FuelCanisterFull
+20, Exile_Item_JunkMetal
+20, Exile_Item_LightBulb
+20, Exile_Item_MetalBoard
+30, Exile_Magazine_Battery

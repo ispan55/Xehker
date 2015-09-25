@@ -1,0 +1,13 @@
+> Industrial
+60, Exile_Item_DuctTape
+35, Exile_Item_ExtensionCord
+25, Exile_Item_FloodLightKit
+30, Exile_Item_FuelCanisterEmpty
+35, Exile_Item_FuelCanisterFull
+35, Exile_Item_JunkMetal
+35, Exile_Item_LightBulb
+35, Exile_Item_MetalBoard
+35, Exile_Item_PortableGeneratorKit
+15, Exile_Item_Rope
+25, Exile_Magazine_Battery
+30, Exile_Melee_Axe
